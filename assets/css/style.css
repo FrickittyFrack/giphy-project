@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+#holding-div {
+    position: fixed;
+    background-color: rgb(111, 9, 206);
+}
+
 h1 {
     font-size: 60px;
     font-weight: bold;
@@ -33,11 +38,12 @@ p {
 
 #trademark {
     color: black;
+    background-color: azure;
     font-weight: bolder;
     padding: 10px;
     margin: 5px;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: -6px;
     width: 100%;
 }
 
@@ -79,8 +85,8 @@ button {
 #container {
     background-color: azure;
     position: fixed;
-    bottom: 0;
-    height: 80%;
+    bottom: 495px;
+    height: 29%;
     width: 100%;
 }
 
@@ -88,12 +94,28 @@ button {
     border: transparent 0px 0px 3px 3px black;
 }
 
+#parent-container {
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    position: absolute;
+    top: 1450px;
+    z-index: -1;
+}
+
+#scroll-container {
+    padding: 3px;
+    max-height: 100%;
+}
+
 #gif-div {
     position: absolute;
     bottom: 10px;
+    overflow: auto;
 }
 
 .gif {
     margin: 20px;
     float: left;
+    overflow: auto;
 }
