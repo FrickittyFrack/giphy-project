@@ -62,7 +62,7 @@ $(document).ready(function() {
                    
                 var rating = result[i].rating;
                     
-                var p = $("<p>").text("Rating: " + rating);
+                var p = $("<p>").text("Rating: " + rating).addClass("rating");
                     
                 var gifImage = $("<img>");
 
@@ -79,11 +79,13 @@ $(document).ready(function() {
                     
                 //     var state = $(this).attr("data-state");
                 //     if (state === "still") {
-                //       $(this).attr("src", $(this).attr(result[i].images.fixed_height.url));
-                //       $(this).attr("data-state", "animate");
+                //         console.log("animate");
+                //         $(this).attr("src", $(this).attr(result[i].images.fixed_height.url));
+                //         $(this).attr("data-state", "animate");
                 //     } else {
-                //       $(this).attr("src", $(this).attr(result[i].images.fixed_height_still.url));
-                //       $(this).attr("data-state", "still");
+                //         console.log("still");
+                //         $(this).attr("src", $(this).attr(result[i].images.fixed_height_still.url));
+                //         $(this).attr("data-state", "still");
                 //     };
                 // });
             };      

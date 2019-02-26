@@ -60,7 +60,7 @@ p {
     font-size: 20px;
     padding: 15px;
     margin: 10px;
-    border-radius: 2px;
+    border-radius: 28px;
 }
 
 button {
@@ -79,7 +79,7 @@ button {
     font-size: 15px;
     padding: 10px;
     margin: 10px;
-    border-radius: 2px;
+    border-radius: 15px;
 }
 
 #container {
@@ -90,32 +90,38 @@ button {
     width: 100%;
 }
 
-.gif-image {
-    border: transparent 0px 0px 3px 3px black;
-}
-
-#parent-container {
-    box-sizing: border-box;
-    padding-top: 50px;
-    width: 100%;
-    position: absolute;
-    top: 1450px;
-    z-index: -1;
+.rating {
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 #scroll-container {
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    top: 1450px;
+    z-index: -1;
     padding: 3px;
     max-height: 100%;
 }
 
 #gif-div {
     position: absolute;
-    bottom: 10px;
+    bottom: 37px;
+    top: 50%;
     overflow: auto;
 }
 
 .gif {
     margin: 20px;
+    background-color: black;
+    border: white solid;
     float: left;
     overflow: auto;
+}
+
+.fa-power-off {
+    color: rgb(106, 13, 192);
 }
